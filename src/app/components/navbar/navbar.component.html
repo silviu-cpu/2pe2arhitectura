@@ -1,0 +1,31 @@
+<nav class="navbar">
+  <div class="slogan">
+    <h1>2pe2 Arhitectura</h1>
+    <p>birou de arhitectură, urbanism și design, Bistrita</p>
+  </div>
+
+  <div class="navbar-brand">
+    <a href="/" class="logo">
+      <img src="./../../../assets/logo.jpg" alt="logo-2pe2" />
+    </a>
+  </div>
+  <button class="navbar-toggler" (click)="toggleMenu()">menu</button>
+  <div class="navbar-menu" [ngClass]="{ 'is-active': isMenuActive }">
+    <a
+      class="navbar-item"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLink]="['/']"
+      >Home</a
+    >
+    <a
+      class="navbar-item"
+      routerLinkActive="active"
+      [routerLink]="['/services']"
+      >Projects</a
+    >
+    <a class="navbar-item" routerLinkActive="active" [routerLink]="['/contact']"
+      >Contact</a
+    >
+  </div>
+</nav>

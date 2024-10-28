@@ -1,0 +1,48 @@
+@import "src/styles.scss";
+.footer {
+  padding: 20px;
+  text-align: center;
+
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .social-media {
+    margin-bottom: 10px;
+
+    a {
+      margin: 0 10px;
+      color: #333;
+
+      &:hover {
+        color: $peach-fuzz;
+        transition: color 0.3s ease;
+      }
+    }
+
+    i {
+      font-size: 24px;
+    }
+
+    p {
+      color: gray;
+    }
+  }
+}
+
+.footer-maker {
+  p {
+    color: gray;
+  }
+  a {
+    text-decoration: none;
+    color: $peach-fuzz;
+  }
+}
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 75px;
+    margin-bottom: 10px;
+  }
+}
