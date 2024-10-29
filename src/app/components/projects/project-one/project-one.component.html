@@ -1,9 +1,10 @@
-<div class="project-detail">
+<div class="container project-detail">
   <h1>Project One</h1>
   <p>Details about Project One go here.</p>
-  <img
-    src="./../../../assets/projectone.jpg"
-    alt="Project One"
-    class="img-fluid"
-  />
+  <!-- Photo grid -->
+  <div class="row photo-grid">
+    <div class="col-md-3 col-sm-12 mb-4" *ngFor="let photo of photos">
+      <img [src]="photo.src" [alt]="photo.alt" class="img-fluid" />
+    </div>
+  </div>
 </div>

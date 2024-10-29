@@ -25,7 +25,53 @@
   <h1>Contact</h1>
   <hr />
   <div class="row pt-4 contact-container">
-    <div class="col-md-6 col-sm-12"></div>
+    <div class="col-md-6 col-sm-12">
+      <p class="form-text">
+        Ne poti trimite orice mesaj cu privire la ce in gand si te vom contacta
+        foarte rapid!
+      </p>
+      <form (submit)="sendEmail($event)">
+        <!-- Name input -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Nume</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Introdu numele"
+            required
+          />
+        </div>
+
+        <!-- Email input -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Introdu adresa de email"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Mesaj</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Scrie mesajul tău aici"
+            required
+          ></textarea>
+        </div>
+        <!-- Send button -->
+        <button type="submit" class="btn btn-primary">Trimite</button>
+      </form>
+    </div>
     <div class="col-md-6 col-sm-12">
       <address>Adresa birou ? aici</address>
       <p>arh. Ionut Nistor | arhitect asociat | i@2pe2.ro</p>
